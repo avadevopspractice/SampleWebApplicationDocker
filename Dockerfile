@@ -1,5 +1,6 @@
 FROM mcr.microsoft.com/dotnet/framework/sdk:4.8 AS build
 WORKDIR /app
+#changes
 
 # copy csproj and restore as distinct layers
 COPY *.sln .
