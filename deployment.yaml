@@ -15,11 +15,8 @@ spec:
         app: aspnetdockerdemo
     spec:
       containers:
-        - name: #{ContainerName}#
-          image: #{ContainerName}#.azurecr.io/#{RepositoryName}#:#{Build.BuildId}#  
-          imagePullPolicy: Always      
-          imagePullSecrets:
-            - name: #{PullSecretKey}#
+        image: githubactionspov.azurecr.io/githubdemo/demoimage:1          
+          imagePullPolicy: Always  
           ports:
             - name: http
               containerPort: 89
